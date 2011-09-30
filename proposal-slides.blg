@@ -4,45 +4,47 @@ The style file: abbrv.bst
 Database file #1: bib/proposal.bib
 Warning--to sort, need author or key in proposal:info-sharing-strategy
 Warning--to sort, need author or key in proposal:nsa-cloud
-You've used 3 entries,
+Warning--empty booktitle in proposal:bah-arch
+Warning--empty booktitle in proposal:raytheon-arch
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            513 strings with 4264 characters,
-and the built_in function-call counts, 822 in all, are:
-= -- 80
-> -- 15
+            521 strings with 4523 characters,
+and the built_in function-call counts, 1357 in all, are:
+= -- 127
+> -- 40
 < -- 1
-+ -- 7
-- -- 4
-* -- 44
-:= -- 107
-add.period$ -- 7
-call.type$ -- 3
-change.case$ -- 11
++ -- 17
+- -- 12
+* -- 71
+:= -- 197
+add.period$ -- 13
+call.type$ -- 5
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 39
-empty$ -- 90
-format.name$ -- 4
-if$ -- 197
+cite$ -- 9
+duplicate$ -- 65
+empty$ -- 142
+format.name$ -- 12
+if$ -- 311
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 1
-newline$ -- 16
-num.names$ -- 2
-pop$ -- 24
+int.to.str$ -- 5
+missing$ -- 3
+newline$ -- 26
+num.names$ -- 6
+pop$ -- 42
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 16
 quote$ -- 0
-skip$ -- 38
+skip$ -- 52
 stack$ -- 0
-substring$ -- 48
-swap$ -- 15
+substring$ -- 58
+swap$ -- 17
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
-warning$ -- 2
-while$ -- 4
-width$ -- 4
-write$ -- 29
-(There were 2 warnings)
+type$ -- 20
+warning$ -- 4
+while$ -- 8
+width$ -- 6
+write$ -- 49
+(There were 4 warnings)
