@@ -5,46 +5,47 @@ Database file #1: bib/proposal.bib
 Warning--to sort, need author or key in proposal:info-sharing-strategy
 Warning--to sort, need author or key in proposal:nsa-cloud
 Warning--empty booktitle in proposal:bah-arch
+Warning--empty booktitle in proposal:nsa-arch
 Warning--empty booktitle in proposal:raytheon-arch
-You've used 5 entries,
+You've used 6 entries,
             2118 wiz_defined-function locations,
-            521 strings with 4523 characters,
-and the built_in function-call counts, 1357 in all, are:
-= -- 127
-> -- 40
+            524 strings with 4646 characters,
+and the built_in function-call counts, 1591 in all, are:
+= -- 148
+> -- 47
 < -- 1
-+ -- 17
-- -- 12
-* -- 71
-:= -- 197
-add.period$ -- 13
-call.type$ -- 5
-change.case$ -- 21
++ -- 20
+- -- 14
+* -- 80
+:= -- 236
+add.period$ -- 16
+call.type$ -- 6
+change.case$ -- 25
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 65
-empty$ -- 142
-format.name$ -- 12
-if$ -- 311
+cite$ -- 11
+duplicate$ -- 78
+empty$ -- 168
+format.name$ -- 14
+if$ -- 362
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 3
-newline$ -- 26
-num.names$ -- 6
-pop$ -- 42
+int.to.str$ -- 6
+missing$ -- 4
+newline$ -- 31
+num.names$ -- 8
+pop$ -- 50
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 19
 quote$ -- 0
-skip$ -- 52
+skip$ -- 59
 stack$ -- 0
-substring$ -- 58
-swap$ -- 17
+substring$ -- 63
+swap$ -- 18
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 20
-warning$ -- 4
-while$ -- 8
-width$ -- 6
-write$ -- 49
-(There were 4 warnings)
+type$ -- 24
+warning$ -- 5
+while$ -- 10
+width$ -- 7
+write$ -- 59
+(There were 5 warnings)
