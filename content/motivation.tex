@@ -6,7 +6,7 @@
 % III. Discuss problems (use pro/con list)
 % IV. Frame specific challenges using slides II, III
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{The Problem --- Customer Perspectives}
 Current policy-centric systems are being forced to move to cloud environments and build much more open systems:
 \newline
@@ -23,7 +23,7 @@ Current policy-centric systems are being forced to move to cloud environments an
 \begin{footnotesize}\textit{--- Informationweek}\end{footnotesize}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{The Problem --- Characteristics}
 Cloud systems may save money, provide more flexibility, but they also \cite{proposal:privacy-security-trust-cloud}:
 \begin{itemize}
@@ -33,11 +33,25 @@ Cloud systems may save money, provide more flexibility, but they also \cite{prop
 \end{itemize}
 \end{frame}
 
+<<<<<<< HEAD
+\begin{frame}[t]
+\frametitle{Current Solutions}
+How are these problems being addressed by impacted organizations?
+\newline
+\newline
+\pause
+They're just starting to be actively addressed and are an open research question \cite{proposal:assured-info-sharing}.
+\newline
+\newline
+Cross-domain architectures are currently the standard for monitoring and information dissemination in an effort lead by the \textit{Unified Cross Domain Management Office}, associated with the Department of Defense (DoD) and the National Security Agency (NSA).
+\end{frame}
+=======
 %\begin{frame}
 %\frametitle{Current Solutions --- UCDMO}
 %\end{frame}
+>>>>>>> 479399df29c011f0219b0236958ad59280e276f5
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Current Solutions --- NSA}
 Legacy cross-domain notional architecture \cite{proposal:nsa-arch}
 \begin{figure}[!t]
@@ -46,9 +60,13 @@ Legacy cross-domain notional architecture \cite{proposal:nsa-arch}
 \caption{NSA Legacy Model}
 \label{fig:model:conceptual-model}
 \end{figure}
+
+\textit{Domain A} --- Private cloud managed by the Air Force
+\newline
+\textit{Domain B} --- A public operational network
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Current Solutions --- NSA (SoA)}
 Future cross-domain notional architecture \cite{proposal:nsa-arch}
 \begin{figure}[!t]
@@ -57,9 +75,13 @@ Future cross-domain notional architecture \cite{proposal:nsa-arch}
 \caption{NSA Service-Oriented Model}
 \label{fig:model:conceptual-model}
 \end{figure}
+
+\textit{GiG} --- Global Information Grid; a large public cloud operated by the DoD
+\newline
+\textit{DSCDS} --- Distributed Service-oriented Cross Domain Solution
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Current Solutions --- Raytheon}
 Raytheon's notional architecture supporting cross-domain information flow \cite{proposal:raytheon-arch}:
 \begin{figure}[!t]
@@ -68,9 +90,11 @@ Raytheon's notional architecture supporting cross-domain information flow \cite{
 \caption{Raytheon Model}
 \label{fig:model:conceptual-model}
 \end{figure}
+
+\textit{...still uses a single perimeter guard...}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[t]
 \frametitle{Current Solutions --- BAH}
 Booz|Allen|Hamilton presented a service-centric cross domain solution in 2009 \cite{proposal:bah-arch}:
 \begin{figure}[!t]
@@ -79,8 +103,42 @@ Booz|Allen|Hamilton presented a service-centric cross domain solution in 2009 \c
 \caption{Booz|Allen|Hamilton Model}
 \label{fig:model:conceptual-model}
 \end{figure}
+\textit{...still uses a single perimeter guard (called a filter segment)...}
 \end{frame}
 
+<<<<<<< HEAD
+\begin{frame}[t]
+\frametitle{Future Solution}
+Organzations are falling back on what they know in the scope of new problems.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=3.4in]{nsa-legacy-arch}
+\caption{NSA Legacy Model}
+\label{fig:model:conceptual-model}
+\end{figure}
+\end{frame}
+
+%overlay:
+%- Policy into network fabric
+%- Multiple compartments on same physical network
+%- Network can integrate cloud components securely
+%- Provides security in depth
+%
+%traditional/guard:
+%- Policy centralized single points of failure
+%- Each physical network can only be at one compartment level
+%- Use is tied to the physical network; no cloud integration possible
+%- Boundary security only 
+\begin{frame}
+\frametitle{Characteristics of Current Solutions}
+\begin{itemize}
+\item<2-> \textit{Centralized Policy} ---
+\item<3-> \textit{Physical to Compartment Mapping} ---
+\item<4-> \textit{Perimeter Protection} ---
+\end{itemize}
+\end{frame}
+=======
 %\begin{frame}
 %\frametitle{Current Solutions --- DoD}
 %\end{frame}
+>>>>>>> 479399df29c011f0219b0236958ad59280e276f5
