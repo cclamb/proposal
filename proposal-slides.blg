@@ -1,0 +1,52 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: proposal-slides.aux
+The style file: abbrv.bst
+Database file #1: bib/proposal.bib
+Warning--to sort, need author or key in proposal:info-sharing-strategy
+Warning--to sort, need author or key in proposal:nsa-cloud
+Warning--to sort, need author or key in proposal:assured-info-sharing
+Warning--empty booktitle in proposal:bah-arch
+Warning--empty booktitle in proposal:nsa-arch
+Warning--empty booktitle in proposal:raytheon-arch
+You've used 7 entries,
+            2118 wiz_defined-function locations,
+            528 strings with 4783 characters,
+and the built_in function-call counts, 1756 in all, are:
+= -- 164
+> -- 48
+< -- 1
++ -- 21
+- -- 14
+* -- 88
+:= -- 254
+add.period$ -- 18
+call.type$ -- 7
+change.case$ -- 28
+chr.to.int$ -- 0
+cite$ -- 13
+duplicate$ -- 85
+empty$ -- 191
+format.name$ -- 14
+if$ -- 403
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 4
+newline$ -- 35
+num.names$ -- 8
+pop$ -- 58
+preamble$ -- 1
+purify$ -- 21
+quote$ -- 0
+skip$ -- 66
+stack$ -- 0
+substring$ -- 68
+swap$ -- 19
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 28
+warning$ -- 6
+while$ -- 10
+width$ -- 8
+write$ -- 67
+(There were 6 warnings)
