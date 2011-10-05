@@ -134,17 +134,17 @@ Even though we know they don't work \cite{proposal:ron-ross}.
 \frametitle{What's Wrong with Current Solutions?}
 \begin{itemize}
 \item<2-> \textit{Centralized Policy} --- A centralized policy enforcement system simplifies infrastructural attacks.  Adversaries know exactly where to focus efforts to compromise policy enforcement, lowering overall system trustworthiness and reliability. 
-\item<3-> \textit{Physical to Compartment Mapping} ---
-\item<4-> \textit{Perimeter Protection} ---
+\item<3-> \textit{Physical to Compartment Mapping} --- The traditional model for multi-level security, enforced in this scheme, is that the network is classified at the level of the most sensitive data that transits it.  Ergo, those that have clearances at a level to view sensitive data are unable to view that data generally without extensive swivel-chair integration.
+\item<4-> \textit{Perimeter Protection} --- Perimeter protection is a necessary but not sufficient security approach.  By itself, it doesn't work \cite{proposal:ron-ross}.
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Characteristics of the Correct Solutions}
+\frametitle{Characteristics of Future Solutions}
 \begin{itemize}
-\item<2-> \textit{Decentralized Policy} ---
-\item<3-> \textit{Infrastructure Reuse} --- Multiple compartments on same HW
-\item<4-> \textit{Cloud Integration} ---
-\item<5-> \textit{Security in Depth} ---
+\item<2-> \textit{Decentralized Policy} --- Policy management is decentralized and integrated within the fabric of the system.  The system is both more secure and resilient as a result, better able to control information and operate under stressful conditions.
+\item<3-> \textit{Infrastructure Reuse} --- Multi-tenancy can lower costs and increase reliability and is furthermore a common attribute of cloud systems.  An appropriately secured system facilitates integration of computing resources into multi-tenant environments.
+\item<4-> \textit{Cloud Integration} --- The ability to handle multi-tenant environments and to reliably secure both data at rest and data in motion leads to computational environments deployable in cloud systems.
+\item<5-> \textit{Security in Depth} --- Systems must operate under \textit{all} conditions, including when they are under attack or compromise \cite{proposal:ron-ross}.  Ergo, they must provide protection to sensitive data in depth.
 \end{itemize}
 \end{frame}
