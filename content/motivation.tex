@@ -8,7 +8,7 @@
 
 \begin{frame}[t]
 \frametitle{The Problems --- Customer Perspectives}
-Current policy-centric systems are being forced to move to cloud environments and build much more open systems.  Organizations also have problems with information sharing --- information needs to be delivered to those who need it as soon as possible:
+Current policy-centric systems are being forced to move to cloud environments and build much more open systems.  Usage management is a key problem in this domain --- information needs to be delivered to those who need it as soon as possible:
 \newline
 \newline
 "...It is imperative to  effectively exchange information among components, Federal agencies, coalition partners, foreign governments and international organizations as a critical element of our efforts to defend the nation and execute national strategy..."\cite{proposal:info-sharing-strategy}
@@ -26,7 +26,7 @@ Current policy-centric systems are being forced to move to cloud environments an
 Cloud systems may save money, provide more flexibility, but they also \cite{proposal:privacy-security-trust-cloud}:
 \begin{itemize}
 \item<2-> \textit{Are Not Private} --- User data control in SaaS is lacking, causing policy concerns for agencies; Data owners have no technical control over secondary use; providers may use offshore development; data can be routed across sensitive countries or secondarily stored on CDNs; data privacy on bankruptcy is ill-defined
-\item<3-> \textit{Are Less Secure} --- Data owners no longer completely control data access, data may not be wiped in all XaaS scenarios, availability and backup leads to possible data proliferation, lack of standardization in intercloud communication and data transfer, multi-tenancy exposure to side-channel attacks, difficulty with reliable logging and auditing
+\item<3-> \textit{Are Less Secure} --- Controlling data access, data may not be wiped in all XaaS scenarios, availability/backup leads to possible data proliferation, lack of standardization in intercloud communication and data transfer, multi-tenancy and side-channel attacks, difficult logging/auditing
 \item<4-> \textit{Cannot Be Trusted} --- Trust relationships, consumer trust
 \end{itemize}
 \end{frame}
@@ -144,7 +144,13 @@ Even though we know they don't work \cite{proposal:ron-ross}.
 \begin{itemize}
 \item<2-> \textit{Decentralized Policy} --- Policy management is decentralized and integrated within the fabric of the system.  The system is both more secure and resilient as a result, better able to control information and operate under stressful conditions.
 \item<3-> \textit{Infrastructure Reuse} --- Multi-tenancy can lower costs and increase reliability and is furthermore a common attribute of cloud systems.  An appropriately secured system facilitates integration of computing resources into multi-tenant environments.
-\item<4-> \textit{Cloud Integration} --- The ability to handle multi-tenant environments and to reliably secure both data at rest and data in motion leads to computational environments deployable in cloud systems.
-\item<5-> \textit{Security in Depth} --- Systems must operate under \textit{all} conditions, including when they are under attack or compromise \cite{proposal:ron-ross}.  Ergo, they must provide protection to sensitive data in depth.
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Characteristics of Future Solutions}
+\begin{itemize}
+\item<2-> \textit{Cloud Integration} --- The ability to handle multi-tenant environments and to reliably secure both data at rest and data in motion leads to computational environments deployable in cloud systems.
+\item<3-> \textit{Security in Depth} --- Systems must operate under \textit{all} conditions, including when they are under attack or compromise \cite{proposal:ron-ross}.  Ergo, they must provide protection to sensitive data in depth.
 \end{itemize}
 \end{frame}
