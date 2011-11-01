@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.07pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Motivation --- Cloud-centric Usage Management}{4}{0}{2}
+\beamer@sectionintoc {3}{Related Work}{16}{0}{3}
+\beamer@sectionintoc {4}{System Architecture}{17}{0}{4}
+\beamer@sectionintoc {5}{Conclusions}{22}{0}{5}
+\beamer@sectionintoc {6}{Introduction}{24}{0}{6}
