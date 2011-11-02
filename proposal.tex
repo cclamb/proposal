@@ -30,13 +30,44 @@ Finally, the length of time between when a sensitive document or other type of d
 
 Federal computer systems are prime examples of these kinds of problematic distributed systems, and demonstrate the difficulty inherent in implementing new technical solutions.  They, like other similar systems, need to be re-imagined to take advantage of radical market shifts in computational provisioning.
 \section{Motivation}
+Current policy-centric systems are being forced to move to cloud environments and build much more open systems.  Some of these environments will be private or hybrid cloud systems, where private clouds are infrastructure that is completely run and operated by an organization for wider use and provisioning, while hybrid clouds are combinations of private and public cloud systems.  Driven by both cost savings and efficiency requirements, this migration will result in a loss of control of computing resources by involved organizations as they attempt to exploit economies of scale and utility computing.
 
+Robust usage management will become an even more important issue in these environments.  Federal organizations poised to benefit from this migration include agencies like the National Security Agency (NSA) and the Department of Defense (DoD), both of whom have large installed bases of compartmentalized and classified data.  The DoD realizes the scope of this effort, understanding that such technical change must incorporate effectively sharing needed data with other federal agencies, foreign governments, and international organizations \cite{proposal:info-sharing-strategy}.  Likewise, the NSA is focused on exploiting cloud-centric systems to facilitate information dissemination and sharing \cite{proposal:nsa-cloud}.
+
+Cloud systems certainly exhibit economic incentives for use, providing cost savings and flexibility but they also have distinct disadvantages as well.  Specifically, the are not intrinsically as private as some current systems, generally can be less secure than department-level solutions, and have the kind of trust issues that therapists cannot adequately address \cite{proposal:privacy-security-trust-cloud}.
+
+To begin with, cloud technology is not currently as private as some organizations would like:
+\begin{itemize}
+\item \textit{User Data Control} ---
+\item \textit{Secondary Use} ---
+\item \textit{Offshore Development} ---
+\item \textit{Data Routing} ---
+\item \textit{Secondary Storage} ---
+\item \textit{Bankruptcy and Data Ownership} ---
+\end{itemize}
+
+Security issues also emerge from utility computing infrastructures:
+\begin{itemize}
+\item \textit{Data Access} ---
+\item \textit{Data Deletion} ---
+\item \textit{Backup Data Storage} ---
+\item \textit{Intercloud Standardization} ---
+\item \textit{Multi-tenancy and Side-Channels} ---
+\item \textit{Logging and Auditing} ---
+\end{itemize}
+
+Finally, such systems suffer from internal and external trust issues:
+\begin{itemize}
+\item \textit{Trust Relationships} ---
+\item \textit{Consumer Trust} ---
+\end{itemize}
 \section{Related Work}
 
 \section{System Architecture}
 
 \section{Conclusions}
 
+\bibliographystyle{plain}
 \bibliography{bib/proposal}
 
 \end{document}
