@@ -4,6 +4,9 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{epsfig}
+\graphicspath{{./images/}} % Figures path - used in graphicx
 \author{Christopher C. Lamb}
 \title{Policy Overlay Networks}
 \date{\today}
@@ -59,6 +62,32 @@ Finally, such systems suffer from internal and external trust issues:
 \item \textit{Trust Relationships} --- Trust is difficult to establish between individual cloud providers long-term.
 \item \textit{Consumer Trust} --- Service users are still not entirely trusting of cloud system providers.
 \end{itemize}
+
+How to address these issues is an open research question.  Organizations ranging from cloud service providers to the military are exploring how to engineer solutions to these problems, and to more clearly understand the trade-offs required between selected system architectures \cite{proposal:assured-info-sharing}.  The problems themselves are wide ranging, appearing in a variety of different systems.  Military and other government systems are clearly impacted by these kinds of trust and security issues, and they also have clear information sensitivity semantics.  This, coupled with the fact that these organizations have been dealing with these issues in one form or another for decades make them very well suited for prototypical implementation and study.
+
+The current standard in place dealing with these issues in this environment is managed by the Unified Cross Domain Management Office (UCDMO).  UCDMO stakeholders range from the DoD to the NSA.  The current standard in place and governed by the UCDMO to deal with this kinds of issues are \textit{guard-centric cross domain architectures}.
+
+\subsection{Current Solutions}
+Current and near-future proposed solutions endorsed by the UCDMO include system architectures assembled by the NSA, Raytheon, and Booz Allen Hamilton (BAH).   The NSA has been active in this area for decades as a logical extension of their role in signals intelligence collection and processing.  Raytheon and BAH have been engaged over the past few years to provide an alternative voice and design approach to these kinds of systems, an effort met with limited success.
+
+These cross-domain solutions are intended to enable sensitive information to easily flow both from a higher sensitivity domain to a lower sensitivity domain, and from lower to higher as well.  They generally act over both primary data (say, a document) and metadata over that primary data as well.  Note that in these system, in most cases, human intervention is still required to adequately review data prior to passing into lower security domains.
+
+\subsubsection{NSA, Filtered}
+The NSA conducted initial work in this area.  Their standard-setting efforts culminated in a reasonable conceptual system architecture, using groups of filters dedicated to specific delineated tasks to process senistive information \cite{proposal:nsa-arch}.
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{nsa-legacy-arch}
+\caption{NSA Legacy Notional Architecture Model}
+\label{fig:model:conceptual-model}
+\end{figure}
+
+\subsubsection{NSA, Services}
+
+\subsubsection{Raytheon}
+
+\subsubsection{Booz Allen Hamilton}
+
+
 
 \section{Related Work}
 
