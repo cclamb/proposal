@@ -96,11 +96,39 @@ In recent years, the NSA has extended the legacy system architecture for cross-d
 \label{fig:model:conceptual-model-services}
 \end{figure}
 
-In this view, we see on the left the \textit{Global Information Grid}, or \textit{GIG}.  On the right, we have the \textit{Distributed Service-oriented Cross Domain Solution}, or \textit{DSCDS}.  The GIG is not a truly open system --- rather, it is a loosely coupled collection of computational services handing data at a variety of levels of sensitivity, federated to provide stakeholder timely access to relevant information \cite{proposal:gig-arch}.  The DSCDS is essentially the embodiment of the NSA's cross-domain vision applied to service oriented computing.  This model fuses various technology choices with previous cross-domain thinking.
+In the view in Figure \ref{fig:model:conceptual-model-services}, we see on the left the \textit{Global Information Grid}, or \textit{GIG}.  On the right, we have the \textit{Distributed Service-oriented Cross Domain Solution}, or \textit{DSCDS}.  The GIG is not a truly open system --- rather, it is a loosely coupled collection of computational services handing data at a variety of levels of sensitivity, federated to provide stakeholder timely access to relevant information \cite{proposal:gig-arch}.  The DSCDS is essentially the embodiment of the NSA's cross-domain vision applied to service oriented computing.  This model fuses various technology choices with previous cross-domain thinking.
+
+Indicative of this more modern system design thinking, we have a variety of services and service consumers attached to a common service bus within the GIG.  Within the DSCDS, we have groups of filters implemented as services inspecting transferred data when moved over the bus.  Finally, all of this interaction is managed by a management interface and controlled by an orchestration engine accessing a centralized group of policies.
+
+Note that here we have begun to access a common policy repository for various types of security metadata regarding primary data elements.
 
 \subsubsection{Raytheon}
+In the past few years, Raytheon has offered a new model for cross domain use influenced by the NSA service-oriented model \cite{proposal:raytheon-arch}:
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{raytheon-arch}
+\caption{Ratheon Model}
+\label{fig:model:conceptual-model-ray}
+\end{figure}
+
+The model in Figure \ref{fig:model:conceptual-model-ray}   is more grounded in the actual technical environment this kind of solution would be embedded within.  Here, we have the Non-secure Internet Protocol Router Network (NIPRNet) as one domain, and the Secret Internet Protocol Router Network (SIPRNet) as the other.  Here, NIPRNet is the lower security domain (lowside), and SIPRNet the higher security domain (highside).  This particular view shows the motion of data from the high side (SIPRNet) to the low side (NIPRNet).
+
+Here, a data request is submitted from SIPRNet first two the \textit{XML Security Gateway} which calls into the \textit{Orchestration Engine} for policy validation.  The Orchstration Engine then coordinates calls into a \textit{Policy Repository} as well as to a collection of external \textit{Support Services}.  Once rectified against these elements, the request is passed into the \textit{Cross Domain Guard} which routes the request into the \textit{Unclassified Enclave} in NIPRNet.  Here, the request is passed directly through the lowside \textit{XML Security Gateway}, without rectification, onto the \textit{Service Provider}.  The response from the Service Provider is then passed back to the requester via the inverse path.
+
+This model also begins to use a centralized policy repository, just as the NSA Service Model.  It also uses a single cross domain guard to transfer information from both the highside to the lowside, and vice-versa.
 
 \subsubsection{Booz Allen Hamilton}
+Booz Allen Hamilton (BAH) submitted a competing model, also in 2009 \cite{proposal:bah-arch}.  In fact, both Raytheon and BAH presented their models under competitive contract to the UCDMO at the same conference, so the domain application is not coincidental.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{bah-arch}
+\caption{Booz Allen Hamilton Model}
+\label{fig:model:conceptual-model-bah}
+\end{figure}
+
+Figure \ref{fig:model:conceptual-model-bah} embodies BAH's thinking with respect to cross domain information management.  Note here, we have a \textit{Domain A} as a high security domain, and \textit{Domain B} as a low security domain.  Here, we again have dataflow from the highside to the lowside through the cross domain management system.
 
 
 
