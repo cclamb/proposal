@@ -130,6 +130,13 @@ Booz Allen Hamilton (BAH) submitted a competing model, also in 2009 \cite{propos
 
 Figure \ref{fig:model:conceptual-model-bah} embodies BAH's thinking with respect to cross domain information management.  Note here, we have a \textit{Domain A} as a high security domain, and \textit{Domain B} as a low security domain.  Here, we again have dataflow from the highside to the lowside through the cross domain management system.
 
+While not as detailed as the Raytheon proposal, this does have similar elements.  Here, we data first travels from Domain A into the \textit{Interface Segment for Domain A}, similar to the secret enclave used in the Raytheon model  From there, it moves into the \textit{CI Segment}, which in turn submits the transferring ata into the \textit{Filter Segment}.  From there, the package is moved into the \textit{Interface Segment for Domain B}, and then onto \textit{Domain B}.  The \textit{Administrative Segment} provides managment and oversight of the system as a whole.
+
+Note the absence of specific policy-centric elements.  This system is reliant on specific filters as well.
+
+\subsubsection{Shortcomings of Current Systems}
+Having reviewed the current state of the art of these kinds of cross domain solutions,  they still have clear similarities, and in fact have not progressed far beyond the initial notions of how these kinds of systems should work.  The still, for example, all use some kind of filter chaining mechanism to evaluate whether a given data item can be moved from a classified to an unclassified network.  Both NSA models used filters explicitly, as did the BAH model.  They all use a single guard as well, a sole point of security and enforcement, providing perimeter data security, but nothing else.  Finally, these models violate the end-to-end principle in large service network design, centralizing intelligence rather than pushing that intelligence down to the ends of the system \cite{Blumenthal:2001:RDI:383034.383037}.
+
 
 
 \section{Related Work}
