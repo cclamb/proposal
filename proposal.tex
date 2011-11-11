@@ -68,7 +68,7 @@ How to address these issues is an open research question.  Organizations ranging
 The current standard in place dealing with these issues in this environment is managed by the Unified Cross Domain Management Office (UCDMO).  UCDMO stakeholders range from the DoD to the NSA.  The current standard in place and governed by the UCDMO to deal with this kinds of issues are \textit{guard-centric cross domain architectures}.
 
 \subsection{Current Solutions}
-Current and near-future proposed solutions endorsed by the UCDMO include system architectures assembled by the NSA, Raytheon, and Booz Allen Hamilton (BAH).   The NSA has been active in this area for decades as a logical extension of their role in signals intelligence collection and processing.  Raytheon and BAH have been engaged over the past few years to provide an alternative voice and design approach to these kinds of systems, an effort met with limited success.
+Current and near-future proposed solutions endorsed by the UCDMO include system architectures assembled by the NSA, Raytheon, and Booz | Allen | Hamilton (BAH).   The NSA has been active in this area for decades as a logical extension of their role in signals intelligence collection and processing.  Raytheon and BAH have been engaged over the past few years to provide an alternative voice and design approach to these kinds of systems, an effort met with limited success.
 
 These cross-domain solutions are intended to enable sensitive information to easily flow both from a higher sensitivity domain to a lower sensitivity domain, and from lower to higher as well.  They generally act over both primary data (say, a document) and metadata over that primary data as well.  Note that in these system, in most cases, human intervention is still required to adequately review data prior to passing into lower security domains.
 
@@ -118,13 +118,13 @@ Here, a data request is submitted from SIPRNet first two the \textit{XML Securit
 
 This model also begins to use a centralized policy repository, just as the NSA Service Model.  It also uses a single cross domain guard to transfer information from both the highside to the lowside, and vice-versa.
 
-\subsubsection{Booz Allen Hamilton}
-Booz Allen Hamilton (BAH) submitted a competing model, also in 2009 \cite{proposal:bah-arch}.  In fact, both Raytheon and BAH presented their models under competitive contract to the UCDMO at the same conference, so the domain application is not coincidental.
+\subsubsection{Booz | Allen | Hamilton}
+BAH submitted a competing model, also in 2009 \cite{proposal:bah-arch}.  In fact, both Raytheon and BAH presented their models under competitive contract to the UCDMO at the same conference, so the domain application is not coincidental.
 
 \begin{figure}[!t]
 \centering
 \includegraphics[width=5in]{bah-arch}
-\caption{Booz Allen Hamilton Model}
+\caption{Booz | Allen | Hamilton Model}
 \label{fig:model:conceptual-model-bah}
 \end{figure}
 
@@ -157,13 +157,18 @@ In this taxonomy, it is not required that systems pass through lower levels to r
 The taxonomy itself starts with the current state, integrating policy evaluation systems into the network fabric gradually, moving away from filters, then by adding policy evaluation into the routing fabric, then the computational nodes, and finally by incorporating evaluation directly into content.
 
 \subsection{$\phi$ --- Single Guard, No Policies}
+The $\phi$ classification consists of systems like the initial NSA and BAH notional models in Figures \ref{fig:model:conceptual-model} and \ref{fig:model:conceptual-model-bah}.
 
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=5in]{blank}
-%\caption{Taxonomy ($\phi$)}
-%\label{fig:model:taxonomy-phi}
-%\end{figure}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{blank}
+\caption{Taxonomy ($\phi$)}
+\label{fig:model:taxonomy-phi}
+\end{figure}
+
+These systems consist of two distinct domains, separated by a filter-centric single guard.  The initial NSA system model is clearly of this type, separating two domains with a guard using filter chains.  The BAH model is also of this type, using a Filter Segment to evaluate data packages transmitted between interface segments attached to specific domains.
+
+Generally one of the domains supports more sensitive information than the other, but that is not always the case.  In the models we have examined this has certainly been true, but classified information for example  is commonly stored in \textit{compartments} which are separated by clear \textit{need-to-know} policies generally enforced by access lists and classification guides.  These kinds of compartments contain information at similar levels of classification, but contain distinct informational elements that should not be combined.
 
 \subsection{$\alpha$ --- Single Guard, Policy Integration}
 
