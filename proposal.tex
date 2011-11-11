@@ -135,13 +135,89 @@ While not as detailed as the Raytheon proposal, this does have similar elements.
 Note the absence of specific policy-centric elements.  This system is reliant on specific filters as well.
 
 \subsubsection{Shortcomings of Current Systems}
-Having reviewed the current state of the art of these kinds of cross domain solutions,  they still have clear similarities, and in fact have not progressed far beyond the initial notions of how these kinds of systems should work.  The still, for example, all use some kind of filter chaining mechanism to evaluate whether a given data item can be moved from a classified to an unclassified network.  Both NSA models used filters explicitly, as did the BAH model.  They all use a single guard as well, a sole point of security and enforcement, providing perimeter data security, but nothing else.  Finally, these models violate the end-to-end principle in large service network design, centralizing intelligence rather than pushing that intelligence down to the ends of the system \cite{Blumenthal:2001:RDI:383034.383037}.
+Having reviewed the current state of the art of these kinds of cross domain solutions,  they still have clear similarities, and in fact have not progressed far beyond the initial notions of how these kinds of systems should work.  The still, for example, all use some kind of filter chaining mechanism to evaluate whether a given data item can be moved from a classified to an unclassified network.  Both NSA models used filters explicitly, as did the BAH model.  They all use a single guard as well, a sole point of security and enforcement, providing perimeter data security, but nothing else.  In each of these current system architectures, users are only allowed to exchange one type of information per domain.  The physical instantiations of these models are locked by operational policy to a single classification level limit.  Users cannot, for example, have Top Secret material on a network accredited for Secret material.  Finally, these models violate the end-to-end principle in large service network design, centralizing intelligence rather than pushing that intelligence down to the ends of the system \cite{Blumenthal:2001:RDI:383034.383037}.
 
+\subsubsection{Characteristics of Future Systems}
+Future systems on the whole will demonstrate decentralized policy management capabilities, infrastructural reuse, the ability to integrate with cloud systems, and security in depth.  Policy management is decentralized and integrated within the fabric of the system.  The system is both more secure and resilient as a result, better able to control information and operate under stressful conditions.  Multi-tenancy can lower costs and increase reliability and is furthermore a common attribute of cloud systems.  An appropriately secured system facilitates integration of computing resources into multi-tenant environments.  The ability to handle multi-tenant environments and to reliably secure both data at rest and data in motion leads to computational environments deployable in cloud systems.  Finally, systems must operate under \textit{all} conditions, including when they are under attack or compromise \cite{proposal:ron-ross}.  Ergo, they must provide protection to sensitive data in depth.
 
+\subsection{Related Work}
 
-\section{Related Work}
+\section{Proposed Taxonomy}
+A clear taxonomic organization of potential steps in approaching finer grained policy based usage management helps in describing the difficulties inherent in developing potential solutions as well as aiding in planning system evolution over time. Here, we have five distinct types of integrated policy-centric usage management systems, as shown in Figure \ref{fig:model:taxonomy}.  Of these five, only the first two levels are represented in current system application.
 
-\section{System Architecture}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{blank}
+\caption{Proposed Usage Management Taxonomy}
+\label{fig:model:taxonomy}
+\end{figure}
+
+In this taxonomy, it is not required that systems pass through lower levels to reach higher ones.  This taxonomy represents a continuum of integration of usage management controls.  Systems can very well be designed to fit into higher taxonomic categories without addressing lower categories.  That said however, many of the supporting infrastructural services, like identification managment or logging and tracing systems, are common between multiple levels.
+
+The taxonomy itself starts with the current state, integrating policy evaluation systems into the network fabric gradually, moving away from filters, then by adding policy evaluation into the routing fabric, then the computational nodes, and finally by incorporating evaluation directly into content.
+
+\subsection{$\phi$ --- Single Guard, No Policies}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\phi$)}
+%\label{fig:model:taxonomy-phi}
+%\end{figure}
+
+\subsection{$\alpha$ --- Single Guard, Policy Integration}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\alpha$)}
+%\label{fig:model:taxonomy-alpha}
+%\end{figure}
+
+\subsection{$\beta$ --- Router Guards}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\beta$)}
+%\label{fig:model:taxonomy-beta}
+%\end{figure}
+
+\subsection{$\gamma$ ---  Router and Node Guards}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\gamma$)}
+%\label{fig:model:taxonomy-gamma}
+%\end{figure}
+
+\subsection{$\delta$ --- Continuous Evaluation}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\delta$)}
+%\label{fig:model:taxonomy-delta}
+%\end{figure}
+
+\section{System Architectural Implications}
+
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Supporting Services}
+%\label{fig:model:suppporting-elements}
+%\end{figure}
+
+\section{Scope and Contribution of Work}
+The unique contribution of this work is a quantitative analysis of policy-centric overlay network options, associated taxonomies of use, and prototypical technology proofs-of-concept.
+\begin{itemize}
+\item \textit{Overlay Options} --- This includes various types of overlay networks and associated strengths and weaknesses addressing centralized and decentralized models
+\item \textit{Taxonomies of Use} --- Depending on the specific usage management requirements and context, different overlays have different applicability; this work will provide guidance on suitability
+\item \textit{Prototypical Technologies} --- Examples and proofs-of-concept will be required to appropriately analyze various architectural alternatives
+\end{itemize}
+This work will focus on the $\alpha$, $\beta$, and $\gamma$ taxonomic categories, excluding $\delta$ and $\phi$ classed systems.
 
 \section{Conclusions}
 
