@@ -161,7 +161,7 @@ The $\phi$ classification consists of systems like the initial NSA and BAH notio
 
 \begin{figure}[!t]
 \centering
-\includegraphics[width=5in]{blank}
+\includegraphics[width=5in]{model-phi}
 \caption{Taxonomy ($\phi$)}
 \label{fig:model:taxonomy-phi}
 \end{figure}
@@ -170,23 +170,42 @@ These systems consist of two distinct domains, separated by a filter-centric sin
 
 Generally one of the domains supports more sensitive information than the other, but that is not always the case.  In the models we have examined this has certainly been true, but classified information for example  is commonly stored in \textit{compartments} which are separated by clear \textit{need-to-know} policies generally enforced by access lists and classification guides.  These kinds of compartments contain information at similar levels of classification, but contain distinct informational elements that should not be combined.
 
-\subsection{$\alpha$ --- Single Guard, Policy Integration}
+In these kinds of systems, specific rules regarding information transfer and domain characterization are tightly bound to individual filter implementations.
 
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=5in]{blank}
-%\caption{Taxonomy ($\alpha$)}
-%\label{fig:model:taxonomy-alpha}
-%\end{figure}
+\subsection{$\alpha$ --- Single Guard, Policy Integration}
+The $\alpha$ category begins to integrate policy-centric management rather than using strict content filtering.  The Raytheon model shown in Figure \ref{fig:model:conceptual-model-ray} and the service-oriented NSA model in Figure \ref{fig:model:conceptual-model-services} are $\alpha$ architectures as they both use policies to guide usage management decisions.
+
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{model-alpha}
+\caption{Taxonomy ($\alpha$)}
+\label{fig:model:taxonomy-alpha}
+\end{figure}
+
+Here, we again have at least two domains, Domain A and Domain B, though we could potentially have more.  $\phi$ type systems require domain specific information to be tightly coupled to the filter implementations.  Separating the permissions, obligations, and other constraints from the filters and incorporating them into a specific separate policy entity frees the Guard from this coupling and provides additional flexibility to the system.
+
+The guard can continue to use filters to process data.  These filters however are now more generic and decoupled from the specific domains it manages.  The choice of using a specific filtering model rather than some other kind of construct is a design detail level to implementers.  That said however, filters will be remarkably different and still need to understand the ontologies over which specific licenses are defined.
+
+The policy repository is key to the implementation and differentiation of this taxonomy category.  This repository can be implemented as a separate repository keyed into via a data artifact's unique URI, for example.  It could also represent a policy sent in tandem with a data artifact in a data package.
+
+The policy repository may be implemented as some kind of external service, and as such, represents the first such external service explicitly used in this taxonomy.  Other external services may well exist and be used to adjudicate information transfer decisions as well.
 
 \subsection{$\beta$ --- Router Guards}
+The $\beta$ taxonomic category begins to integrate policy-centric processing with router elements in a given network.  While this work is centered on using overlay technology to illustrate and implement these concepts, it is important to note that this kind of distributed policy-centric processing could very well be distributed into the physical routing fabric of a given network as well.
 
-%\begin{figure}[!t]
-%\centering
-%\includegraphics[width=5in]{blank}
-%\caption{Taxonomy ($\beta$)}
-%\label{fig:model:taxonomy-beta}
-%\end{figure}
+\begin{figure}[!t]
+\centering
+\includegraphics[width=5in]{model-beta}
+\caption{Taxonomy ($\beta$)}
+\label{fig:model:taxonomy-beta}
+\end{figure}
+
+In this model we can as well host multiple domains as a result of flexible policy-based content examination.  Each domain hosts a network of some kind, though that hosted network could very well be a degenerate network of a single system.  Each network hosted in a domain is hierarchical, with specific computational nodes embodied by workstations, tablet computers or mobile devices, and routing points embodied by routers or switches of some kind.
+
+Policy evaluation in this model has begun to penetrate into the routing elements of the specific domain networks.
+
+This migration of policy evaluation into the routing fabric provides for enhanced data security, and better network management, especially if part of a network is compromised.
+
 
 \subsection{$\gamma$ ---  Router and Node Guards}
 

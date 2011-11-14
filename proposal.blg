@@ -1,0 +1,60 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: proposal.aux
+The style file: plain.bst
+Database file #1: bib/proposal.bib
+Warning--to sort, need author or key in proposal:info-sharing-strategy
+Warning--to sort, need author or key in proposal:nsa-cloud
+Warning--to sort, need author or key in proposal:borders-info-I
+Warning--to sort, need author or key in proposal:borders-info-II
+Warning--to sort, need author or key in proposal:borders-info-III
+Warning--to sort, need author or key in proposal:saic-breach-I
+Warning--to sort, need author or key in proposal:saic-breach-II
+Warning--to sort, need author or key in proposal:saic-breach-III
+Warning--to sort, need author or key in proposal:assured-info-sharing
+Warning--to sort, need author or key in proposal:gig-arch
+Warning--empty booktitle in proposal:bah-arch
+Warning--empty booktitle in proposal:nsa-arch
+Warning--empty booktitle in proposal:raytheon-arch
+Warning--empty booktitle in proposal:ron-ross
+You've used 16 entries,
+            2118 wiz_defined-function locations,
+            565 strings with 6714 characters,
+and the built_in function-call counts, 3466 in all, are:
+= -- 331
+> -- 75
+< -- 1
++ -- 36
+- -- 20
+* -- 175
+:= -- 475
+add.period$ -- 38
+call.type$ -- 16
+change.case$ -- 58
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 158
+empty$ -- 403
+format.name$ -- 20
+if$ -- 806
+int.to.chr$ -- 0
+int.to.str$ -- 16
+missing$ -- 6
+newline$ -- 73
+num.names$ -- 12
+pop$ -- 125
+preamble$ -- 1
+purify$ -- 42
+quote$ -- 0
+skip$ -- 129
+stack$ -- 0
+substring$ -- 135
+swap$ -- 28
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 64
+warning$ -- 14
+while$ -- 16
+width$ -- 18
+write$ -- 144
+(There were 14 warnings)
