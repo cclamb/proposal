@@ -6,6 +6,7 @@
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{epsfig}
+\usepackage{booktabs}
 \graphicspath{{./images/}} % Figures path - used in graphicx
 \author{Christopher C. Lamb}
 \title{Policy Overlay Networks}
@@ -145,14 +146,22 @@ Future systems on the whole will demonstrate decentralized policy management cap
 \section{Proposed Taxonomy}
 A clear taxonomic organization of potential steps in approaching finer grained policy based usage management helps in describing the difficulties inherent in developing potential solutions as well as aiding in planning system evolution over time. Here, we have five distinct types of integrated policy-centric usage management systems, as shown in Figure \ref{fig:model:taxonomy}.  Of these five, only the first two levels are represented in current system application.
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=5in]{blank}
+\begin{table}[tp] %
+\centering %
+\begin{tabular}{clcc}
+\toprule %
+$ Name$ 	& $Description$ \\\toprule %
+$\phi$ 		& FooFooFooFooFooFooFooFooFooFooFooFooFoo FooFooFooFoo Foo \\\midrule
+$\alpha$	& Bar \\\midrule
+$\beta$		& Bar \\\midrule
+$\gamma$	& Bar \\\midrule
+$\delta$	& Bar \\\bottomrule
+\end{tabular}
 \caption{Proposed Usage Management Taxonomy}
 \label{fig:model:taxonomy}
-\end{figure}
+\end{table}
 
-In this taxonomy, it is not required that systems pass through lower levels to reach higher ones.  This taxonomy represents a continuum of integration of usage management controls.  Systems can very well be designed to fit into higher taxonomic categories without addressing lower categories.  That said however, many of the supporting infrastructural services, like identification managment or logging and tracing systems, are common between multiple levels.
+In this taxonomy, it is not required that systems pass through lower levels to reach higher ones.  This taxonomy represents a continuum of integration of usage management controls.  Systems can very well be designed to fit into higher taxonomic categories without addressing lower categories.  That said however, many of the supporting infrastructural services, like identification management or logging and tracing systems, are common between multiple levels.
 
 The taxonomy itself starts with the current state, integrating policy evaluation systems into the network fabric gradually, moving away from filters, then by adding policy evaluation into the routing fabric, then the computational nodes, and finally by incorporating evaluation directly into content.
 
@@ -237,7 +246,6 @@ Smart licenses simplify the deployment environment.  They are essentially packag
 These kinds of licenses are able to manage dynamic context more effectively.  As usage history accompanies each smart license, such usage no longer needs to be managed by an external service. Furthermore, offline use is much easier to implement as much of the information is omnipresent in the smart license package.
 
 The cost for these advantages is additional license development complexity.  The license needs to support offline use via some kind of caching mechanism and needs to be able to interact with the local environment as well as the larger enterprise environment.  It is no longer a data-centric package of artifacts and meta-data, but is rather an actual program moving through various systems of the network.
-
 
 %\begin{figure}[!t]
 %\centering
