@@ -230,6 +230,14 @@ In Figure \ref{fig:model:taxonomy-gamma}, we see that the policy repository is s
 Furthermore, individual node exclusion is possible as well. $\beta$ classified systems could excise network elements under specific routers by dynamic policy application.  Now, we can apply the same functionality to individual compute nodes.  For example, if a networked device like a smart phone is compromised, that device can be removed from access quickly or used to feed mis-information to adversaries.
 
 \subsection{$\delta$ --- Continuous Evaluation}
+At this level of the taxonomy, we are not passing data packages around which we then examine and make judgments against.  Rather, we now have a system based around a \textit{smart license} where decisions regarding use and routing are asked of the data package itself.
+
+Smart licenses simplify the deployment environment.  They are essentially packages of mobile code, and as such require an environment in which to run but that environment does not need to support all the system elements that it would otherwise need to integrate.  Usage history, management decisions, policy evaluation, and other components would be packaged into this smart license and distributed.  Hosts would need to provide the appropriate environment in which these licenses run, but little else.
+
+These kinds of licenses are able to manage dynamic context more effectively.  As usage history accompanies each smart license, such usage no longer needs to be managed by an external service. Furthermore, offline use is much easier to implement as much of the information is omnipresent in the smart license package.
+
+The cost for these advantages is additional license development complexity.  The license needs to support offline use via some kind of caching mechanism and needs to be able to interact with the local environment as well as the larger enterprise environment.  It is no longer a data-centric package of artifacts and meta-data, but is rather an actual program moving through various systems of the network.
+
 
 %\begin{figure}[!t]
 %\centering
@@ -248,7 +256,7 @@ Furthermore, individual node exclusion is possible as well. $\beta$ classified s
 %\end{figure}
 
 \section{Scope and Contribution of Work}
-The unique contribution of this work is a quantitative analysis of policy-centric overlay network options, associated taxonomies of use, and prototypical technology proofs-of-concept.
+The unique contribution of this work is a quantitative analysis of policy-centric overlay network options, associated taxonomies of use, and prototypical technology proofs-of-concept.  The process of examining and developing this system will address:
 \begin{itemize}
 \item \textit{Overlay Options} --- This includes various types of overlay networks and associated strengths and weaknesses addressing centralized and decentralized models
 \item \textit{Taxonomies of Use} --- Depending on the specific usage management requirements and context, different overlays have different applicability; this work will provide guidance on suitability
