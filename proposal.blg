@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
 The top-level auxiliary file: proposal.aux
 The style file: plain.bst
 Database file #1: bib/proposal.bib
+Database file #2: bib/drm.bib
 Warning--to sort, need author or key in proposal:info-sharing-strategy
 Warning--to sort, need author or key in proposal:nsa-cloud
 Warning--to sort, need author or key in proposal:borders-info-I
@@ -12,49 +13,54 @@ Warning--to sort, need author or key in proposal:saic-breach-II
 Warning--to sort, need author or key in proposal:saic-breach-III
 Warning--to sort, need author or key in proposal:assured-info-sharing
 Warning--to sort, need author or key in proposal:gig-arch
+Warning--to sort, need author or key in marlin
+Warning--empty author in marlin
+Warning--empty institution in marlin
 Warning--empty booktitle in proposal:bah-arch
+Warning--empty author in coral
+Warning--empty institution in coral
 Warning--empty booktitle in proposal:nsa-arch
 Warning--empty booktitle in proposal:raytheon-arch
 Warning--empty booktitle in proposal:ron-ross
-You've used 16 entries,
+You've used 28 entries,
             2118 wiz_defined-function locations,
-            565 strings with 6714 characters,
-and the built_in function-call counts, 3466 in all, are:
-= -- 331
-> -- 75
-< -- 1
-+ -- 36
-- -- 20
-* -- 175
-:= -- 475
-add.period$ -- 38
-call.type$ -- 16
-change.case$ -- 58
+            650 strings with 8648 characters,
+and the built_in function-call counts, 7687 in all, are:
+= -- 764
+> -- 231
+< -- 6
++ -- 103
+- -- 70
+* -- 470
+:= -- 1121
+add.period$ -- 74
+call.type$ -- 28
+change.case$ -- 122
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 158
-empty$ -- 403
-format.name$ -- 20
-if$ -- 806
+cite$ -- 47
+duplicate$ -- 341
+empty$ -- 754
+format.name$ -- 70
+if$ -- 1734
 int.to.chr$ -- 0
-int.to.str$ -- 16
-missing$ -- 6
-newline$ -- 73
-num.names$ -- 12
-pop$ -- 125
+int.to.str$ -- 28
+missing$ -- 16
+newline$ -- 133
+num.names$ -- 32
+pop$ -- 197
 preamble$ -- 1
-purify$ -- 42
+purify$ -- 92
 quote$ -- 0
-skip$ -- 129
+skip$ -- 258
 stack$ -- 0
-substring$ -- 135
-swap$ -- 28
-text.length$ -- 1
+substring$ -- 417
+swap$ -- 77
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 64
-warning$ -- 14
-while$ -- 16
-width$ -- 18
-write$ -- 144
-(There were 14 warnings)
+type$ -- 112
+warning$ -- 19
+while$ -- 55
+width$ -- 30
+write$ -- 279
+(There were 19 warnings)

@@ -9,7 +9,7 @@
 \usepackage{booktabs}
 \graphicspath{{./images/}} % Figures path - used in graphicx
 \author{Christopher C. Lamb}
-\title{Policy Overlay Networks}
+\title{Policy-centric Overlay Networks for Usage Management}
 \date{\today}
 \begin{document}
 
@@ -18,7 +18,7 @@
 \doublespacing
 
 \begin{abstract}
-Abstract - TBD
+Overlay networks have become a widely used technology with examples ranging from consumer focused distribution systems like BitTorrent to commercial content distribution systems like Akamai.  These kinds of systems, with the appropriate policy-centric content management components, can address looming problems in information distribution that both companies and federal agencies are beginning to face with respect to sensitive content.  This work addresses the current state of the art in these kinds of systems, reviewing current example system architectures from the Unified Cross Domain Management Office (UCDMO), a federal organization specifically tasked with addressing these issues.  It then covers other related work, introduces a taxonomy of types of policy-centric usage managed network systems, and proposes specific work that represents a significant contribution to the understanding of such systems. 
 \end{abstract}
 
 \section{Introduction}
@@ -141,7 +141,12 @@ Having reviewed the current state of the art of these kinds of cross domain solu
 \subsubsection{Characteristics of Future Systems}
 Future systems on the whole will demonstrate decentralized policy management capabilities, infrastructural reuse, the ability to integrate with cloud systems, and security in depth.  Policy management is decentralized and integrated within the fabric of the system.  The system is both more secure and resilient as a result, better able to control information and operate under stressful conditions.  Multi-tenancy can lower costs and increase reliability and is furthermore a common attribute of cloud systems.  An appropriately secured system facilitates integration of computing resources into multi-tenant environments.  The ability to handle multi-tenant environments and to reliably secure both data at rest and data in motion leads to computational environments deployable in cloud systems.  Finally, systems must operate under \textit{all} conditions, including when they are under attack or compromise \cite{proposal:ron-ross}.  Ergo, they must provide protection to sensitive data in depth.
 
-\subsection{Related Work}
+\subsection{Other Related Work}
+This work introduces the notion of usage management embedded in a delivery network itself and provides an in-depth analysis of the challenges and principles involved in the design of an open, interoperable usage management framework that operates over this kind of envrionment. Besides referencing the material we have covered in depth to portray the current state of the art, the analysis includes application of well-known principles of system design and standards~\cite{BlCl:01,Cl:88,ClWrSoBr:02}, research developments in the areas of usage control~\cite{PaSa:04,JaHeLa:10}, policy languages design principles~\cite{JaHeMa:06}, digital rights management (DRM) systems~\cite{JaHe:09},  and interoperability~\cite{JaHe:04,HeJa:05,KoLaMaMi:04,coral,marlin} towards the development of supporting frameworks.
+
+While a large body of work exists on how overlay networks can use policies for \textit{network} management, very little work has been done on using usage policies for \textit{content} management.  The primary contribution in this area focuses on dividing a given system into specific \textit{security domains} which are governed by individual policies \cite{4457175}.  This system fits into our proposed taxonomy as an $\alpha$-type system as it has domains with single separating guards.
+
+A large body of work currently exists with respect to security in and securing overlay networks.  These kinds of techniques and this area of study is vital to the production development and delivery of overlay systems, but is outside the scope of this work.
 
 \section{Proposed Taxonomy}
 A clear taxonomic organization of potential steps in approaching finer grained policy based usage management helps in describing the difficulties inherent in developing potential solutions as well as aiding in planning system evolution over time. Here, we have five distinct types of integrated policy-centric usage management systems, as shown in Figure \ref{fig:model:taxonomy}.  Of these five, only the first two levels are represented in current system application.
@@ -151,11 +156,15 @@ A clear taxonomic organization of potential steps in approaching finer grained p
 \begin{tabular}{clcc}
 \toprule %
 $ Name$ 	& $Description$ \\\toprule %
-$\phi$ 		& FooFooFooFooFooFooFooFooFooFooFooFooFoo FooFooFooFoo Foo \\\midrule
-$\alpha$	& Bar \\\midrule
-$\beta$		& Bar \\\midrule
-$\gamma$	& Bar \\\midrule
-$\delta$	& Bar \\\bottomrule
+$\phi$ 		& The initial level of this taxonomy, $phi$ classified systems \\
+ 			& have a single guard without policy-based control \\\midrule
+$\alpha$	& $\alpha$ classified systems have a single guard by have begun \\
+			& to integrate policy-based control \\\midrule
+$\beta$		& Systems that have begun to integrate policy-based control with \\
+			& router elements are in the $\beta$ category \\\midrule
+$\gamma$	& Systems that have integrated policy-based control with routing \\
+			& and computational elements \\\midrule
+$\delta$	& Continuous policy-based control with smart licensed artifacts \\\bottomrule
 \end{tabular}
 \caption{Proposed Usage Management Taxonomy}
 \label{fig:model:taxonomy}
@@ -215,14 +224,14 @@ Policy evaluation in this model has begun to penetrate into the routing elements
 
 Certain types of traffic are easier to evaluate than others however.  For example, HTTP requests and responses are easier to examine that TCP packets.  When examining TCP packets, systems generally require additional context to select an appropriate packet window (e.g. the number of packets cached for examination).  HTTP traffic does not usually require this kind of flexibility.
 
-\begin{figure}[!t]
-\centering
-\includegraphics[width=5in]{blank}
-\caption{Taxonomy ($\beta$) Compartments}
-\label{fig:model:taxonomy-beta-compartment}
-\end{figure}
+%\begin{figure}[!t]
+%\centering
+%\includegraphics[width=5in]{blank}
+%\caption{Taxonomy ($\beta$) Compartments}
+%\label{fig:model:taxonomy-beta-compartment}
+%\end{figure}
 
-This migration of policy evaluation into the routing fabric provides for enhanced data security and better network management, especially if part of a network is compromised.  Now that policy decisions can be made at the router level in a given network, we are starting to have network security in depth rather than simple perimeter protection.  This not only provides the ability for additional information protection, but also allows for different compartments holding information at different need-to-know levels to be created ad-hoc under different routing segments.  Figure \ref{fig:model:taxonomy-beta-compartment} shows this kind of configuration within a typical information domain.  In cases of network compromise, this kind of dynamic policy enforcement can also allow for quick node excision as well.
+This migration of policy evaluation into the routing fabric provides for enhanced data security and better network management, especially if part of a network is compromised.  Now that policy decisions can be made at the router level in a given network, we are starting to have network security in depth rather than simple perimeter protection.  This not only provides the ability for additional information protection, but also allows for different compartments holding information at different need-to-know levels to be created ad-hoc under different routing segments.  In cases of network compromise, this kind of dynamic policy enforcement can also allow for quick node excision as well.
 
 \subsection{$\gamma$ ---  Router and Node Guards}
 The $\gamma$ compartment has integrated policy evaluation with compute and routing nodes.  Here, policies can be evaluated against content at all network levels --- nodes emitting requests, nodes fielding requests, and all routing elements in between.
@@ -254,7 +263,7 @@ The cost for these advantages is additional license development complexity.  The
 %\label{fig:model:taxonomy-delta}
 %\end{figure}
 
-\section{System Architectural Implications}
+% \section{System Architectural Implications}
 
 %\begin{figure}[!t]
 %\centering
@@ -275,6 +284,6 @@ This work will focus on the $\alpha$, $\beta$, and $\gamma$ taxonomic categories
 \section{Conclusions}
 
 \bibliographystyle{plain}
-\bibliography{bib/proposal}
+\bibliography{bib/proposal,bib/drm}
 
 \end{document}
