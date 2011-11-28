@@ -1,0 +1,334 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.6)  20 NOV 2011 17:33
+entering extended mode
+ %&-line parsing enabled.
+**proposal.tex
+(./proposal.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen103
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count87
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count88
+\leftroot@=\count89
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count90
+\DOTSCASE@=\count91
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count92
+\c@MaxMatrixCols=\count93
+\dotsspace@=\muskip10
+\c@parentequation=\count94
+\dspbrk@lvl=\count95
+\tag@help=\toks17
+\row@=\count96
+\column@=\count97
+\maxfields@=\count98
+\andhelp@=\toks18
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks19
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
+Package: `setspace' 6.7 <2000/12/01>
+) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
+\Gread@gobject=\count99
+))
+\Gin@req@height=\dimen112
+\Gin@req@width=\dimen113
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
+)
+(/usr/share/texmf-texlive/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen116
+\lightrulewidth=\dimen117
+\cmidrulewidth=\dimen118
+\belowrulesep=\dimen119
+\belowbottomsep=\dimen120
+\aboverulesep=\dimen121
+\abovetopsep=\dimen122
+\cmidrulesep=\dimen123
+\cmidrulekern=\dimen124
+\defaultaddspace=\dimen125
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen126
+\@belowrulesep=\dimen127
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen128
+) (./proposal.aux)
+\openout1 = `proposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count104
+\scratchdimen=\dimen129
+\scratchbox=\box28
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count107
+\MPscratchDim=\dimen130
+\MPnumerator=\count108
+\everyMPtoPDFconversion=\toks23
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Overfull \hbox (2.44089pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10.95 Tor-rent to com-mer-cial con-tent dis-tri-bu-tion sys-tems l
+ike Aka-mai. These
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 45.
+
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 45.
+
+Overfull \hbox (5.44359pt too wide) in paragraph at lines 45--46
+[]\OT1/cmr/m/it/12 User Data Con-trol \OT1/cmr/m/n/12 --- In vir-tu-ally any gi
+ven Software-as-a-Service (SaaS)
+ []
+
+[4] [5]
+Overfull \hbox (3.9298pt too wide) in paragraph at lines 59--60
+[]\OT1/cmr/m/it/12 Multi-tenancy and Side-Channels \OT1/cmr/m/n/12 --- Multi-te
+nant ar-chi-tec-tures in which
+ []
+
+[6] [7] <./images/nsa-legacy-arch.png, id=31, 902.37125pt x 363.3575pt>
+File: ./images/nsa-legacy-arch.png Graphic file (type png)
+
+<use ./images/nsa-legacy-arch.png> [8] [9 <./images/nsa-legacy-arch.png (PNG co
+py)>] <./images/nsa-arch.png, id=38, 895.345pt x 286.06876pt>
+File: ./images/nsa-arch.png Graphic file (type png)
+
+<use ./images/nsa-arch.png> [10 <./images/nsa-arch.png (PNG copy)>]
+<./images/raytheon-arch.png, id=42, 1304.875pt x 464.73625pt>
+File: ./images/raytheon-arch.png Graphic file (type png)
+
+<use ./images/raytheon-arch.png> [11 <./images/raytheon-arch.png>]
+<./images/bah-arch.png, id=48, 972.63374pt x 456.70625pt>
+File: ./images/bah-arch.png Graphic file (type png)
+
+<use ./images/bah-arch.png> [12] [13 <./images/bah-arch.png>] [14] [15]
+[16] <./images/model-phi.jpg, id=67, 722.7pt x 542.025pt>
+File: ./images/model-phi.jpg Graphic file (type jpg)
+
+<use ./images/model-phi.jpg> [17]
+<./images/model-alpha.jpg, id=71, 722.7pt x 542.025pt>
+File: ./images/model-alpha.jpg Graphic file (type jpg)
+
+<use ./images/model-alpha.jpg> [18 <./images/model-phi.jpg>] [19 <./images/mode
+l-alpha.jpg>] <./images/model-beta.jpg, id=79, 722.7pt x 542.025pt>
+File: ./images/model-beta.jpg Graphic file (type jpg)
+
+<use ./images/model-beta.jpg> [20] [21 <./images/model-beta.jpg>]
+<./images/model-gamma.jpg, id=86, 722.7pt x 542.025pt>
+File: ./images/model-gamma.jpg Graphic file (type jpg)
+
+<use ./images/model-gamma.jpg> [22] [23 <./images/model-gamma.jpg>] [24]
+[25] [26] (./proposal.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+[]\OT1/cmr/m/n/12 Marlin ar-chi-tec-ture overview.  Tech-ni-cal re-port, 2006.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+[]\OT1/cmr/m/n/12 DoD In-for-ma-tion Shar-ing Strat-egy.  http://cio-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+[]\OT1/cmr/m/n/12 Assured In-for-ma-tion Shar-ing in Clouds.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+\OT1/cmr/m/n/12 http://www.zyn.com/sbir/sbres/sttr/dod/af/af11-bt30.htm, Au-gus
+t
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+[]\OT1/cmr/m/n/12 Military Health Plan Data Breach Threat-ens 4.9 Mil-lion.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--39
+\OT1/cmr/m/n/12 http://www.informationweek.com/news/healthcare/security-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+[]\OT1/cmr/m/n/12 NSA Pur-sues Intelligence-Sharing Ar-chi-tec-ture.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+\OT1/cmr/m/n/12 http://www.informationweek.com/news/government/cloud-
+ []
+
+[27]
+Underfull \hbox (badness 2564) in paragraph at lines 51--55
+[]\OT1/cmr/m/n/12 Privacy Alert: Barnes and No-ble buys Bor-ders cus-tomer list
+.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 51--55
+\OT1/cmr/m/n/12 http://www.broadbandexpert.com/blog/privacy/privacy-alert-barne
+s-
+ []
+
+[28]
+Underfull \hbox (badness 6268) in paragraph at lines 97--100
+[]\OT1/cmr/m/n/12 Coral con-sor-tium whitepa-per.  Tech-ni-cal re-port, Feb. 20
+06.
+ []
+
+[29] [30]) [31] (./proposal.aux) ) 
+Here is how much of TeX's memory you used:
+ 2069 strings out of 495061
+ 25786 string characters out of 1182574
+ 74894 words of memory out of 3000000
+ 5224 multiletter control sequences out of 15000+50000
+ 13526 words of font info for 52 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 27i,8n,23p,1208b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmbx12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share
+/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/typ
+e1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+mti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on proposal.pdf (31 pages, 984563 bytes).
+PDF statistics:
+ 153 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+
