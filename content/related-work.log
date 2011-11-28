@@ -1,23 +1,14 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 NOV 2011 13:32
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.9.6)  28 NOV 2011 13:40
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **related-work.tex
 (./related-work.tex
 LaTeX2e <2009/09/24>
-Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
-rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
-, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
-kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
-german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
- bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
-telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
- lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
-nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
- turkmen, ukrainian, uppersorbian, welsh, loaded.
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
 ! Undefined control sequence.
 l.1 \section
-            {Related Work}
+            {Closest Related Work}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -31,11 +22,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \section{R
-              elated Work}
+l.1 \section{C
+              losest Related Work}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no C in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
 Missing character: There is no R in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no l in font nullfont!
@@ -255,11 +253,11 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Citation `4457175' on page  undefined on input line 7.
 
 Missing character: There is no ] in font nullfont!
-\citation{foo}
+\citation{4404172}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.13 ... strata from abuse by overlays \cite{foo}}
+l.13 ...ata from abuse by overlays \cite{4404172}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -268,7 +266,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Citation `foo' on page  undefined on input line 13.
+LaTeX Warning: Citation `4404172' on page  undefined on input line 13.
 
 
 ! LaTeX Error: Environment beamerboxesrounded undefined.
@@ -313,11 +311,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 16 strings out of 493747
- 263 string characters out of 3143546
- 49070 words of memory out of 3000000
- 3406 multiletter control sequences out of 15000+200000
+ 16 strings out of 495061
+ 274 string characters out of 1182574
+ 45108 words of memory out of 3000000
+ 3291 multiletter control sequences out of 15000+50000
  4294 words of font info for 16 fonts, out of 3000000 for 9000
- 714 hyphenation exceptions out of 8191
+ 28 hyphenation exceptions out of 8191
  20i,3n,26p,243b,103s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
