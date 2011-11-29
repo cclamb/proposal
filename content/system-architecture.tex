@@ -53,10 +53,27 @@ What would this kind of overlay system look like?
 
 \begin{frame}[t]
 \frametitle{System Architecture - Level $\delta$}
+
+Here, we introduce the concept of a \textit{Smart License}:
+\begin{itemize}
+\pause
+\item \textit{Mobile} --- Licenses are small programs that move along the overlay and are run at various policy enforcement points \cite{proposal:rfc3198}
+\pause
+\item \textit{Integrated} --- Content, Policies, Usage Management Mechanism all packaged in Smart License
+\pause
+\item \textit{Contained} --- Content and Policies are never exposed, all access to content is through specific interfaces
+\end{itemize}
+\pause
 \begin{columns}[t]
 \column{.5\textwidth}
-Level 3 system 
+\textit{Advantages}
+\newline
+\newline
+Potentially more \textbf{secure} for content, provides finest-grained \textbf{control}; \textbf{simpler} routers and nodes
 \column{.5\textwidth}
-Fully Integrated Policy Aware Decentralized System
+\textit{Disadvantages}
+\newline
+\newline
+Mobile code requires \textbf{uniform execution environments}, which have their own \textbf{security} problems; \textbf{complex} license
 \end{columns}
 \end{frame}
