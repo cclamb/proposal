@@ -1,0 +1,65 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Chris Lamb}
+\begin{document}
+
+\section*{$\phi$ --- Single Guard, No Policies}
+\begin{itemize}
+\item NSA and BAH models here
+\begin{itemize}
+\item NSA two domains with filter chains
+\item BAH filter segment evaluates data between interface segments
+\end{itemize}
+\item Usually one domain more sensitive than the other
+\begin{itemize}
+\item need-to-know
+\item not always, sometimes compartmented data just can't be mixed
+\end{itemize}
+\item rules tightly coupled to filter implementations, filters need to know \textit{specific information} about content
+\end{itemize}
+
+\section*{$\alpha$ --- Single Guard, Policy Integration}
+\begin{itemize}
+\item Ratheon and NSA SOA models here
+\begin{itemize}
+\item Both use explicit policies to guide decisions
+\end{itemize}
+\item at least two domains, could have more
+\item separating obligations, permissions, constraints gives flexibility
+\item filters can be more generic, supporting policies defined with a specific ontology
+\item more flexible
+\begin{itemize}
+\item rules now described in policies that accompany content
+\item guards no longer need to know how specific content can be used \textit{a priori}
+\item just need to understand a fairly static metamodel, then get specifics from policies
+\item e.g. here guard knows that content may have expiration dates; in $\phi$ guard needs to know the expiration data \textit{a priori}
+\end{itemize}
+\item easier to manage, maintain
+\item policies can be referenced via URI or packaged with content directly
+\item first external service, others can exist
+\end{itemize}
+
+\section*{$\beta$ --- Router Guards}
+\begin{itemize}
+\item Using overlays, but could be implemented in physical elements or SDN-like systems
+\item Each domain hosts network, could be degenerate of one node
+\item Content evaluation at routing points
+\item Some traffic easier than others
+\begin{itemize}
+\item HTTP easier than TCP
+\end{itemize}
+\item More security in depth
+\item Can create compartments under specific routers (ad-hoc creation!); beginnings of multi-tenancy
+\end{itemize}
+
+\section*{$\gamma$ --- Router and Node Guards}
+\begin{itemize}
+\item Integrated with routers and nodes
+\item evaluate at all levels; emitting requests, fielding requests, and in between
+\item Single node compartments possible
+\item more security in depth
+\end{itemize}
+\end{document}
